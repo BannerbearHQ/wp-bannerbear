@@ -1,0 +1,361 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bannerbear\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-15 05:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.2; wp-6.1\n"
+"X-Domain: bannerbear"
+
+#: src/Plugin.php:224
+msgid "Add New"
+msgstr ""
+
+#: src/Plugin.php:223
+msgctxt "Add New on Toolbar"
+msgid "Signed URL"
+msgstr ""
+
+#: src/Plugin.php:225
+msgid "Add New Signed URL"
+msgstr ""
+
+#: src/Plugin.php:222
+msgctxt "Admin Menu text"
+msgid "Signed URLs"
+msgstr ""
+
+#. Name of the plugin
+#. Author of the plugin
+#: src/Admin.php:45 src/Admin.php:46
+msgid "Bannerbear"
+msgstr ""
+
+#: src/Dynamic_Tags.php:191
+msgid "Current author's custom field"
+msgstr ""
+
+#: src/Dynamic_Tags.php:138
+msgid "Current post's custom field"
+msgstr ""
+
+#: src/Dynamic_Tags.php:96
+msgid "Current user's custom field"
+msgstr ""
+
+#: src/Admin.php:203
+msgid "Custom field deleted."
+msgstr ""
+
+#: src/Admin.php:202
+msgid "Custom field updated."
+msgstr ""
+
+#: src/Admin.php:229
+msgid "Date"
+msgstr ""
+
+#: src/views/modifications.php:49
+msgid "Default"
+msgstr ""
+
+#: src/views/post-type.php:41
+msgid "Display after content"
+msgstr ""
+
+#: src/views/post-type.php:28
+msgid "Display before content"
+msgstr ""
+
+#: src/Bannerbear_Widget.php:25
+msgid "Displays a dynamic image"
+msgstr ""
+
+#: src/Plugin.php:227
+msgid "Edit Signed URL"
+msgstr ""
+
+#: src/Admin.php:116
+msgid "Embed"
+msgstr ""
+
+#: src/API_Controller.php:136
+msgid "Error creating signed url."
+msgstr ""
+
+#. %s: error message
+#: src/API_Controller.php:103 src/API_Controller.php:116
+#: src/API_Controller.php:127 src/API_Controller.php:165
+#, php-format
+msgid "Error creating signed url: %s"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Generate dynamic banners, featured images, OG meta images, etc for your "
+"website."
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://bannerbear.com"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://github.com/BannerbearHQ/wp-bannerbear"
+msgstr ""
+
+#: src/views/modifications.php:64
+msgid "Meta Key"
+msgstr ""
+
+#: src/Admin.php:107
+msgid "Modifications"
+msgstr ""
+
+#: src/Plugin.php:226
+msgid "New Signed URL"
+msgstr ""
+
+#: src/functions.php:50
+msgid "No BannerBear template found for this url."
+msgstr ""
+
+#: src/views/modifications.php:75
+msgid "No modifications available for this template."
+msgstr ""
+
+#: src/Plugin.php:232
+msgid "No urls found in Trash."
+msgstr ""
+
+#: src/Plugin.php:231
+msgid "No urls found."
+msgstr ""
+
+#: src/views/embed.php:30
+msgid ""
+"Note: You can also use the Bannerbear widget to display a dynamic image in "
+"you site header, footer, sidebar and other widget areas."
+msgstr ""
+
+#: src/Plugin.php:230
+msgid "Parent URL:"
+msgstr ""
+
+#: src/views/embed.php:23
+msgid "PHP Snippet"
+msgstr ""
+
+#: src/Plugin.php:220
+msgctxt "Post type general name"
+msgid "Signed URLs"
+msgstr ""
+
+#: src/Plugin.php:221
+msgctxt "Post type singular name"
+msgid "Signed URL"
+msgstr ""
+
+#: src/Plugin.php:229
+msgid "Search URLS"
+msgstr ""
+
+#: src/Bannerbear_Widget.php:127
+msgid "Select URL"
+msgstr ""
+
+#: src/views/embed.php:15
+msgid "Shortcode"
+msgstr ""
+
+#: src/Bannerbear_Widget.php:124
+msgid "Signed URL:"
+msgstr ""
+
+#: src/Plugin.php:234
+msgid "Signed URLs"
+msgstr ""
+
+#: src/Admin.php:227
+msgid "Template ID"
+msgstr ""
+
+#. %s is the taxonomy name.
+#: src/Dynamic_Tags.php:151
+#, php-format
+msgid "The current %s."
+msgstr ""
+
+#. %s is the current date.
+#: src/Dynamic_Tags.php:43
+#, php-format
+msgid "The current date. Example: %s."
+msgstr ""
+
+#. %s is the current language.
+#: src/Dynamic_Tags.php:55
+#, php-format
+msgid "The current language. Example: %s."
+msgstr ""
+
+#: src/Dynamic_Tags.php:185
+msgid "The current post author avatar."
+msgstr ""
+
+#: src/Dynamic_Tags.php:180
+msgid "The current post author bio."
+msgstr ""
+
+#: src/Dynamic_Tags.php:170
+msgid "The current post author email."
+msgstr ""
+
+#: src/Dynamic_Tags.php:160
+msgid "The current post author ID."
+msgstr ""
+
+#: src/Dynamic_Tags.php:165
+msgid "The current post author name."
+msgstr ""
+
+#: src/Dynamic_Tags.php:175
+msgid "The current post author URL."
+msgstr ""
+
+#: src/Dynamic_Tags.php:108
+msgid "The current post title."
+msgstr ""
+
+#: src/Dynamic_Tags.php:128
+msgid "The current post's date."
+msgstr ""
+
+#: src/Dynamic_Tags.php:123
+msgid "The current post's excerpt."
+msgstr ""
+
+#: src/Dynamic_Tags.php:118
+msgid "The current post's featured image."
+msgstr ""
+
+#: src/Dynamic_Tags.php:103
+msgid "The current post's ID."
+msgstr ""
+
+#: src/Dynamic_Tags.php:133
+msgid "The current post's modified date."
+msgstr ""
+
+#: src/Dynamic_Tags.php:113
+msgid "The current post's URL."
+msgstr ""
+
+#. %s is the current time.
+#: src/Dynamic_Tags.php:49
+#, php-format
+msgid "The current time. Example: %s."
+msgstr ""
+
+#: src/Dynamic_Tags.php:90
+msgid "The current user's avatar URL."
+msgstr ""
+
+#: src/Dynamic_Tags.php:85
+msgid "The current user's bio."
+msgstr ""
+
+#: src/Dynamic_Tags.php:68
+msgid "The current user's display name."
+msgstr ""
+
+#: src/Dynamic_Tags.php:74
+msgid "The current user's email."
+msgstr ""
+
+#: src/Dynamic_Tags.php:62
+msgid "The current user's ID."
+msgstr ""
+
+#: src/Dynamic_Tags.php:79
+msgid "The current user's URL."
+msgstr ""
+
+#: src/Admin.php:226
+msgid "Title"
+msgstr ""
+
+#: src/Bannerbear_Widget.php:119
+msgid "Title:"
+msgstr ""
+
+#: src/Admin.php:228
+msgid "URL Base"
+msgstr ""
+
+#: src/Admin.php:210
+msgid "URL draft updated."
+msgstr ""
+
+#: src/Admin.php:206
+msgid "URL published."
+msgstr ""
+
+#: src/Admin.php:205
+msgid "URL restored."
+msgstr ""
+
+#: src/Admin.php:207
+msgid "URL saved."
+msgstr ""
+
+#: src/Admin.php:209
+msgid "URL scheduled."
+msgstr ""
+
+#: src/Admin.php:208
+msgid "URL submitted."
+msgstr ""
+
+#: src/Admin.php:201 src/Admin.php:204
+msgid "URL updated."
+msgstr ""
+
+#: src/views/post-type.php:56
+msgid "Use as open graph image"
+msgstr ""
+
+#: src/views/embed.php:25
+msgid ""
+"Use this PHP snippet to display the image inside your theme template files."
+msgstr ""
+
+#: src/views/embed.php:17
+msgid ""
+"Use this shortcode to display the image inside your post, page, or text "
+"widget content."
+msgstr ""
+
+#: src/Plugin.php:228
+msgid "View Signed URL"
+msgstr ""
+
+#. %1$s is a link to the signed URL editor.
+#: src/Bannerbear_Widget.php:138
+#, php-format
+msgid ""
+"You can edit or create signed URLs in the <a href=\"%s\">Signed URLs</a> "
+"page."
+msgstr ""
+
+#: src/API_Controller.php:71
+msgid "You do not have permission to access this resource."
+msgstr ""

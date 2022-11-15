@@ -1,0 +1,16 @@
+{
+    "name": "yongfook/wp-bannerbear",
+    "type": "library",
+    "description": "Generate dynamic banners, featured images, OG meta images, etc for your website.",
+    "keywords": ["wordpress","bannerbear","images", "featured images", "og meta images", "dynamic images"],
+    "homepage": "https://bannerbear.com",
+    "license": "GPL-3.0+",
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bannerbear\\WP\\": "src/"
+        }
+    }
+}
