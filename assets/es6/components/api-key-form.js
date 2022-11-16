@@ -1,6 +1,5 @@
 import { useState } from "@wordpress/element";
 import { __ } from '@wordpress/i18n';
-import apiFetch from '@wordpress/api-fetch';
 import { Notice, Spinner, Button, TextControl, Flex, FlexBlock, FlexItem } from "@wordpress/components";
 
 /**
@@ -14,6 +13,66 @@ import { Notice, Spinner, Button, TextControl, Flex, FlexBlock, FlexItem } from 
 	const [ apiKey, setApiKey ] = useState( '' );
 	const [ loading, setLoading ] = useState( false );
 	const [ error, setError ] = useState( null );
+	const [ planSupported, setPlanSupported ] = useState( true );
+
+	/**
+	 * Checks if the plan is supported.
+	 *
+	 * @param {function} callback The callback function.
+	 * @returns {Promise<void>}
+	 */
+	const checkPlanSupported = ( callback ) => {
+
+		setLoading( true );
+		setError( null );
+		setPlanSupported( true );
+
+		return window
+
+			.fetch( 'https://api.bannerbear.com/v2/account/', {
+				headers: {
+					'Authorization': 'Bearer ' + apiKey,
+				},
+			})
+
+			// Parse the response.
+			.then( ( res ) => res.json() )
+
+			// Throw an error if the response is not successful.
+			.then( ( res ) => {
+				if ( res.message ) {
+					throw new Error( res.message );
+				}
+				return res;
+			} )
+
+			// Response is an array of templates.
+			.then( ( res ) => {
+
+				// Check if res.paid_plan_name contains the word Automate
+				if ( ! res.paid_plan_name || res.paid_plan_name.includes( 'Automate' ) ) {
+					setPlanSupported( false );
+				} else {
+					setPlanSupported( true );
+					callback();
+				}
+
+				setLoading( false );
+			} )
+
+			// Display an error on failure.
+			.catch( ( err ) => {
+
+				if ( err.message ) {
+					setError( err.message );
+				} else {
+					setError( __( 'Something went wrong.', 'wp-bannerbear' ) );
+				}
+
+				setLoading( false );
+			} );
+
+	};
 
 	/**
 	 * Fetches the templates from the API.
@@ -74,7 +133,7 @@ import { Notice, Spinner, Button, TextControl, Flex, FlexBlock, FlexItem } from 
 		e.preventDefault();
 
 		if ( apiKey ) {
-			fetchTemplates();
+			checkPlanSupported( fetchTemplates );
 		}
 	};
 
@@ -91,6 +150,25 @@ import { Notice, Spinner, Button, TextControl, Flex, FlexBlock, FlexItem } from 
 					>{error}</Notice>
 				)}
 
+				{ ! planSupported && (
+					<Notice status="warning" isDismissible={false}>
+						<p>Your Bannerbear plan is <b>Automate</b> which does not include the Signed URLs feature.</p>
+						<p>
+							<a
+								href="https://www.bannerbear.com/pricing/"
+								target="_blank"
+							>{__( 'View Bannerbear Plans', 'bannerbear' )}</a>
+						</p>
+						<p>
+							<a
+								variant="secondary"
+								href="https://app.bannerbear.com/account"
+								target="_blank"
+							>{__( 'Upgrade Bannerbear Plan', 'bannerbear' )}</a>
+						</p>
+					</Notice>
+				) }
+
 				<Flex wrap align="top">
 
 					<FlexBlock>
@@ -99,6 +177,7 @@ import { Notice, Spinner, Button, TextControl, Flex, FlexBlock, FlexItem } from 
 							hideLabelFromVision
 							value={ apiKey }
 							onChange={ setApiKey }
+							onFocus={ () => { setPlanSupported( true ) } }
 							placeholder={__( 'Enter your API key', 'bannerbear' )}
 							disabled={ loading }
 						/>

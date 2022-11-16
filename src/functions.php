@@ -75,7 +75,7 @@ function bannerbear_get_allowed_modifications( $post_id ) {
 
 	$allowed_modifications = isset( $template['available_modifications'] ) ? $template['available_modifications'] : array();
 
-	set_transient( 'bannerbear_allowed_modifications_' . $post_id, $allowed_modifications, HOUR_IN_SECONDS );
+	set_transient( 'bannerbear_allowed_modifications_' . $post_id, $allowed_modifications, 10 * MINUTE_IN_SECONDS );
 
 	return $allowed_modifications;
 }
