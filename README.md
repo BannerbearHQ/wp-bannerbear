@@ -61,10 +61,8 @@ It can also be embedded as a shortcode/snippet or added as a Block on WordPress 
 
 <img width="1430" alt="Screenshot 2022-11-16 at 7 01 35 PM" src="https://user-images.githubusercontent.com/49879122/202163755-011531db-5a08-42bc-937e-839aba0a93ec.png">
 
-**Block**
-
-![block](https://user-images.githubusercontent.com/49879122/202170393-30612285-12d8-4ed3-b871-d41c5aacf2cb.png)
-
+**Block** 
+<img width="1429" alt="Screenshot 2022-11-16 at 8 01 22 PM" src="https://user-images.githubusercontent.com/49879122/202175799-6f66a67c-8940-4ff6-8e8c-a9c3cd05092b.png">
 
 
 ## Examples
