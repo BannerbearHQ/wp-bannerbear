@@ -28,4 +28,11 @@ defined( 'ABSPATH' ) || exit;
 		height: 200px;
 		object-fit: cover;
 	}
+
+	@media (min-width: 600px) {
+		.post-type-bannerbear_url .components-modal__content {
+			min-width: 500px;
+		}
+	}
+
 </style>
