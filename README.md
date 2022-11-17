@@ -2,6 +2,13 @@
 
 A WordPress plugin that adds Bannerbear Signed URL functionality to WordPress sites.
 
+- [About](#about)  
+- [Installation](#installation)  
+- [Usage](#usage) 
+- [Examples](#examples)
+
+## About
+
 ### What is Bannerbear?
 
 [Bannerbear](https://www.bannerbear.com/) is a SaaS service that auto-generates images, based on dynamic parameters that you send, and templates you have set up on the Bannerbear back end.
@@ -17,10 +24,6 @@ One use case for this is auto-generating Open Graph images.
 ### Who is this plugin for?
 
 This plugin requires a Bannerbear Scale or Enterprise account and is best suited for agencies managing WordPress sites for multiple clients, or individual users with large WordPress sites.
-
-- [Installation](#installation)  
-- [Usage](#usage) 
-- [Examples](#examples)
 
 ## Installation
 
