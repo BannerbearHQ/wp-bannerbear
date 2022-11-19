@@ -1,5 +1,6 @@
 name: Deploy to WordPress.org
 on:
+  workflow_dispatch:
   release:
     types: [published]
 jobs:
@@ -8,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
-      uses: actions/checkout@master
+      uses: actions/checkout@main
     - name: WordPress Plugin Deploy
       id: deploy
       uses: 10up/action-wordpress-plugin-deploy@stable
